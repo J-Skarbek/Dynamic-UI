@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
-import './dropdown.js';
+import { appendDropDown } from './dropdown';
+// import './dropdown.js';
 
 function component() {
   const element = document.createElement('div');
@@ -17,3 +18,4 @@ function dropDownComponent() {
   
 document.body.appendChild(component());
 document.body.appendChild(dropDownComponent());
+appendDropDown();
