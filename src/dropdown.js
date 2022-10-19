@@ -28,7 +28,9 @@ const appendDropDown = () => {
 }
 
 function activateDropDown() {
-  console.log('testing dd button')
+  const dropDownList = document.querySelector('.dropdown-content')
+  dropDownList.classList.add('visable')
+  console.log('testing the button press')
 }
 
 export { createDropDown, appendDropDown, activateDropDown }
