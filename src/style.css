@@ -49,19 +49,34 @@ table {
 
 .dropBtn {
   font-size: 1.3rem;
+  width: 200px;
+  max-width: 200px;
 }
 
 
 .dropdown-content {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .dropdown-content a {
   font-size: 1.1rem;
+  padding: 5%;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #fefefe;
+}
+
+.dropdown-content a:hover {
+  color: #f1f1f1;
+  background-color: #000;
 }
 
 .visable {
   display: flex;
   flex-direction: column;
-
+  width: 200px;
+  max-width: 200px;
+  border: 2px solid #cccccc;
+  visibility: visible;
+  opacity: 1;
 }

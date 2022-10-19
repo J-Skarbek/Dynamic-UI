@@ -23,14 +23,16 @@ function createDropDown() {
 }
 
 const appendDropDown = () => {
-  const dropDownButton = document.querySelector('.dropBtn');
-  dropDownButton.addEventListener('click', activateDropDown)
+  const dropDownButton = Array.from(document.getElementsByClassName('dropBtn'));
+  dropDownButton.forEach(button => {
+    button.addEventListener('click', activateDropDown)
+  });
 }
 
-function activateDropDown() {
+function activateDropDown(e) {
   const dropDownList = document.querySelector('.dropdown-content')
-  dropDownList.classList.add('visable')
-  console.log('testing the button press')
+  dropDownList.classList.toggle('visable')
+  console.log(e)
 }
 
 export { createDropDown, appendDropDown, activateDropDown }
