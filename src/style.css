@@ -80,3 +80,14 @@ table {
   visibility: visible;
   opacity: 1;
 }
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #BEE8E8
+}
+
+.blank-spacer {
+  height: 400px;
+}
